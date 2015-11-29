@@ -1,0 +1,9 @@
+<template name="loginSystem">
+  {{#if currentUser}}
+       <p>You're logged in.</p>
+       <button type="button" name="button" class="redirect">redirect</button>
+   {{else}}
+       {{> register}}
+       {{> login}}
+   {{/if}}
+</template>
